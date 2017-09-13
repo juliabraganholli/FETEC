@@ -13,11 +13,13 @@ use Auth;
 use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
+
 {
     public function __construct()
     {
         $this->middleware('auth:admin');
     }
+
 
     public function index($rota)
     {
